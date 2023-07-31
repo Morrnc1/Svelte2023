@@ -6,5 +6,5 @@
 
 <footer>
   <p>Audiobooks found here</p>
-  <p><a href="https://www.audible.com">Audible</a></p>
+  <p><a href="https://www.audible.com" target="_blank">Audible</a></p>
 </footer>
