@@ -4,6 +4,7 @@
   </script>
   
   <!-- Import the Header component -->
+  <!-- svelte-ignore missing-declaration -->
   <Header />
   
   <main>
@@ -12,9 +13,10 @@
   </main>
   
   <!-- Import the Footer component -->
+  <!-- svelte-ignore missing-declaration -->
   <Footer />
   
   <style>
-    @import '../assets/main.css';
+    @import '$lib/main.css';
   </style>
   

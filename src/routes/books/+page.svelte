@@ -1,6 +1,6 @@
 <!-- Book.svelte -->
 <script>
-    export let title = "Book";
+    export const title = "Book";
   </script>
   
   <h2>The perfect run</h2>
@@ -9,6 +9,6 @@
   <!-- Add more details about the audiobook -->
   
   <style>
-    @import '$assets/main.css';
+    @import '$lib/main.css';
   </style>
   

@@ -4,7 +4,7 @@
   </footer>
   
   <style>
-    @import '../assets/main.css';
+    @import '$lib/main.css';
   
     footer {
       text-align: center;

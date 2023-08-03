@@ -1,6 +1,6 @@
 <!-- Home.svelte -->
 <script>
-    export let title = "Home";
+    export const title = "Home";
   </script>
   
   <h2>My Favoret audiobooks</h2>
@@ -18,6 +18,6 @@
   </ul>
   
   <style>
-    @import '$assets/main.css';
+    @import '$lib/main.css';
   </style>
   

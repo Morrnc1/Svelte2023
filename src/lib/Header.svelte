@@ -1,12 +1,12 @@
 <!-- Header.svelte -->
 <nav>
-   <a href="/">Home</a>
-   <a href="/books">Books</a>
-   <a href="/about">About</a>
+   <a href="$src/">Home</a>
+   <a href="$src/books">Books</a>
+   <a href="$src/about">About</a>
  </nav>
  
  <style>
-   @import '../assets/main.css';
+   @import '$lib/main.css';
  
    nav {
      display: flex;
