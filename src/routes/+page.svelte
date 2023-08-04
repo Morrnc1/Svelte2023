@@ -18,6 +18,6 @@
   </ul>
   
   <style>
-    @import '$lib/main.css';
+    @import '../static/css/main.css';
   </style>
   
