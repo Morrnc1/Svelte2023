@@ -1,4 +1,6 @@
-
+<head>
+    <title>About</title>
+  </head>
 <script>
  
   </script>

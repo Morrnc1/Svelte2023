@@ -1,5 +1,7 @@
 
-
+<head>
+  <title>Books</title>
+</head>
 <script>
   let books = [
     { title: 'Book 1', author: 'Author 1' },
