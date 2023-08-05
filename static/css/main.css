@@ -1,0 +1,35 @@
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.header, .footer, .nav {
+  background-color: cyan;
+}
+
+a {
+  color: magenta;
+}
+
+.book-card {
+  background-color: gray;
+  border: 1px solid magenta;
+}
+
+
+.book-card {
+  background-color: gray;
+  border: 1px solid magenta;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.book-card img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+
