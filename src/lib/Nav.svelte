@@ -10,7 +10,7 @@
   background-color: cyan;
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
+  padding: 0px 0px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
