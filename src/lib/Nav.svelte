@@ -19,7 +19,7 @@
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 2.3s, color 1.3s;
 }
 
 .nav a:hover {
