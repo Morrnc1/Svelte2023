@@ -12,7 +12,7 @@
 
 
 <div class="content">
-    <div class="BG-FW">background img</div>
+    <div class="BG-FW"></div>
     <slot/>
 </div>
 
