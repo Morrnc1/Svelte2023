@@ -1,30 +1,32 @@
+<head>
+  <link rel="stylesheet" href="css/nav.css">
+</head>
 
-<nav class="nav">
-    <a href="/">Home</a>
-    <a href="/books">Books</a>
-    <a href="/about">About</a>
-  </nav>
-  
-  <style> 
-    .nav {
-  background-color: cyan;
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 0px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-}
+<script>
+  let showDropdown = false;
 
-.nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
-  transition: background-color 2.3s, color 1.3s;
-}
+  function toggleDropdown() {
+      showDropdown = !showDropdown;
+  }
 
-.nav a:hover {
-  background-color: magenta;
-  color: white;
-}
+ 
+  function closeDropdown() {
+      showDropdown = false;
+  }
+</script>
 
-</style>
+<nav class="navbar">
+  <div class="nav-logo">
+      <a href="/" on:click={closeDropdown}>
+          <img class="logo" src="https://toppng.com/uploads/preview/a-little-maid-neko-for-today-kawaii-neko-girl-chibi-11562928180umulz4qslj.png" alt="Site Logo">
+      </a>
+  </div>
+  <div class="menu-icon" on:click={toggleDropdown}>
+      ☰
+  </div>
+  <div class={showDropdown ? 'dropdown-content show' : 'dropdown-content'}>
+      <a href="/home" on:click={closeDropdown}>Home</a>
+      <a href="/about" on:click={closeDropdown}>About</a>
+      <a href="/books" on:click={closeDropdown}>Books</a>
+  </div>
+</nav>

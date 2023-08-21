@@ -1,18 +1,13 @@
 <script>
-    import Header from '$lib/Header.svelte'
-    import Footer from '$lib/Footer.svelte'
-    import Nav from '$lib/Nav.svelte'
+    import Header from '$lib/Header.svelte';
+    import Footer from '$lib/Footer.svelte';
+    import Nav from '$lib/Nav.svelte';
 </script>
+<link rel="stylesheet" href="css/main.css" />
 
-<Nav/>
-<Header/>
-
-
-    <link rel="stylesheet" href="css/main.css" />
-
+<Nav />
 
 <div class="content">
-    <div class="BG-FW"></div>
     <slot/>
 </div>
 
