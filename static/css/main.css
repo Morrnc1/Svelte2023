@@ -5,13 +5,13 @@ body, html {
   display: flex;
   flex-direction: column;
   background: url("../image/BG-FW.jpg") center / cover no-repeat fixed;
-  color: #cfd8dc; /* Light blueish text color to contrast the dark background */
+  color: #cfd8dc;
   font-family: Arial, sans-serif;
 }
 
 
 .header, .footer, .nav {
-  background-color: cyan;
+  background-color: rgb(0, 0, 0);
 }
 
 a {
@@ -23,7 +23,7 @@ a {
 .footer-container {
   padding: 0px;
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   width: 100%;
   flex-shrink: 0;

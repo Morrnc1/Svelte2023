@@ -3,12 +3,12 @@
 </head>
 <script>
   let books = [
-    { title: 'Book 1', author: 'Author 1', image: 'https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png' },
-    { title: 'Book 2', author: 'Author 2', image: 'https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png' },
-    { title: 'Book 3', author: 'Author 3', image: 'https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png' },
-    { title: 'Book 4', author: 'Author 4', image: 'https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png' },
-    { title: 'Book 5', author: 'Author 5', image: 'https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png' },
-    { title: 'Book 6', author: 'Author 6', image: 'https://www.buwelldrillers.co.nz/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png' },
+    { title: 'The Primal Hunter', author: 'Zogarth', image: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1642013459i/60111529.jpg' },
+    { title: 'Defiance Of The Fall', author: 'TheFirstDefier', image: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1619486020i/57866482.jpg' },
+    { title: 'He Who Fights With Monsters', author: 'Shirtaloon', image: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1614114118i/57189884.jpg' },
+    { title: 'All The SKills', author: 'Honour Rae', image: 'https://www.royalroadcdn.com/public/covers-large/55687-all-the-skills-a-deckbuilding-litrpg.jpg?time=1660799721' },
+    { title: 'Dungeon Carawler Carl', author: 'Matt Dinniman', image: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1595600712i/54659324.jpg' },
+    { title: 'System Universe', author: 'SunriseCV', image: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1658172758i/61588227.jpg' },
     
   ];
 </script>
