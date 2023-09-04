@@ -20,7 +20,13 @@
       <a href="/" on:click={closeDropdown}>
           <img class="logo" src="https://toppng.com/uploads/preview/a-little-maid-neko-for-today-kawaii-neko-girl-chibi-11562928180umulz4qslj.png" alt="Site Logo">
       </a>
-  </div>
+    </div>
+    
+    <div class="container">
+      <input type="text" placeholder="Search...">
+      <div class="search"></div>
+    </div>
+
   <div class="menu-icon" on:click={toggleDropdown}>
       ☰
   </div>
@@ -29,4 +35,5 @@
       <a href="/about" on:click={closeDropdown}>About</a>
       <a href="/books" on:click={closeDropdown}>Books</a>
   </div>
+
 </nav>
