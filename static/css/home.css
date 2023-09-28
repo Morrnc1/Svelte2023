@@ -9,31 +9,31 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-}
-
-.container {
+  }
+  
+  .container {
     width: 900px;
     max-width: 85vw;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.heading {
+  }
+  
+  .heading {
     text-align: center;
     margin-bottom: 2rem;
     color: #E1E1E6;
-}
-
-.genre-section {
+  }
+  
+  .genre-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-}
-
-.genre-btn {
+  }
+  
+  .genre-btn {
     background: rgba(18, 18, 18, 0.7);
     border: 1px solid #680bf4;
     padding: 0.5rem 1rem;
@@ -42,14 +42,14 @@ body {
     cursor: pointer;
     margin: 5px;
     transition: all 0.3s ease;
-}
-
-.genre-btn:hover {
+  }
+  
+  .genre-btn:hover {
     background-color: #adaee6;
     color: #1d1d1d;
-}
-
-.book-of-the-month {
+  }
+  
+  .book-of-the-month {
     padding: 1rem;
     border-radius: 15px;
     background: rgba(18, 18, 18, 0.7);
@@ -57,49 +57,48 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 10vw;
-    width: 10%;
-}
-
-.book-of-the-month h3 {
+  }
+  
+  .book-of-the-month h3 {
     text-align: center;
     margin-bottom: 1.5rem;
-}
-
-.book-grid {
+  }
+  
+  .book-grid {
     display: grid;
     grid-template-columns: 150px auto;
     grid-gap: 20px;
     align-items: center;
-}
-
-figure {
+  }
+  
+  figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-figure img {
+  }
+  
+  figure img {
     max-width: 60%;
     height: auto;
     border-radius: 15px;
     margin-bottom: 1rem;
     object-fit: cover;
-}
-
-figcaption h4, figcaption p {
+  }
+  
+  figcaption h4, figcaption p {
     text-align: center;
     color: #E1E1E6;
-}
-
-@media screen and (max-width: 920px) {
+  }
+  
+  @media screen and (max-width: 920px) {
     .container {
-        width: 80vw;
+      width: 80vw;
     }
-}
-
-@media screen and (max-width: 600px) {
+  }
+  
+  @media screen and (max-width: 600px) {
     .container {
-        width: 90vw;
+      width: 90vw;
     }
-}
+  }
+  
