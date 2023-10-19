@@ -4,7 +4,7 @@
 </head>
 
 <script>
-  import { searchTerm } from "$lib/store.js";  // Include searchTerm
+  import { searchTerm } from "$lib/store.js";  
   let showDropdown = false;
 
   function toggleDropdown() {
@@ -16,7 +16,7 @@
   }
 
   function updateSearch(e) {
-      searchTerm.set(e.target.value);  // Update the searchTerm store
+      searchTerm.set(e.target.value); 
   }
 </script>
 
@@ -28,7 +28,7 @@
   </div>
   
   <div class="container">
-    <input type="text" placeholder="Search..." on:input={updateSearch}> <!-- Add on:input handler -->
+    <input type="text" placeholder="Search..." on:input={updateSearch}> 
     <div class="search"></div>
   </div>
 

@@ -1,6 +1,5 @@
-<!-- books.svelte -->
 <script>
-  import { books, selectedGenre, searchTerm } from "$lib/store.js";  // Include searchTerm
+  import { books, selectedGenre, searchTerm } from "$lib/store.js";  
 </script>
 <link rel="stylesheet" href="css/books.css" />
 <main class="book-container">
