@@ -36,10 +36,10 @@
   
 
    <ul>
-    <li><a class="" href="">Welcome</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Books</a></li>
-    <li><a href="">Home</a></li>
+    <li><a class="" href="/">Welcome</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/books">Books</a></li>
+    <li><a href="/home">Home</a></li>
    </ul>
 
 
