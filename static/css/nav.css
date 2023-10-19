@@ -15,14 +15,18 @@
     object-fit: cover;
 }
 
-.menu-icon {
-    font-size: 2rem;
-    cursor: pointer;
-    color: #a971ff;
-    transition: text-shadow 0.3s ease;
+.ham-menu {
+    height: 5px;
+    width: 100%;
+    background-color: #a971ff;
+    border-radius: 25px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-10%, -90%)
 }
 
-.menu-icon:hover {
+.ham-menu:hover {
     text-shadow: 0 0 10px #a971ff, 0 0 20px #a971ff;
 }
 
