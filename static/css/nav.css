@@ -52,4 +52,12 @@ a.active,a.hover{
     transition: .5s;
     box-shadow: 1px 1px 1px 1px;
 }
-.checkbutton{}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}

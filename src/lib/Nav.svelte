@@ -29,7 +29,7 @@
   <div class="search"></div>
 </div> -->
 <input type="checkbox" id="check">
-<lable for="check" class="checkcon">
+<lable for="check" class="checkbtn">
   <i class="bars"></i>
 </lable>
 
