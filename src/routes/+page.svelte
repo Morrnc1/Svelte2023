@@ -18,7 +18,6 @@
             gallery.scrollLeft += 1;
 
             if (gallery.scrollLeft >= gallery.scrollWidth - window.innerWidth) {
-                
                 offset += TOTAL_POKEMON;
                 fetchPokemon();
             }

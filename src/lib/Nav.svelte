@@ -32,8 +32,10 @@
     <div class="search"></div>
   </div>
 
-  <div class="menu-icon" on:click={toggleDropdown}>
-    ☰
+  <div class="ham-menu"> 
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
   
   <div class={showDropdown ? 'dropdown-content show' : 'dropdown-content'}>
