@@ -32,11 +32,12 @@
     <div class="search"></div>
   </div>
 
-  <div class="ham-menu"> 
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <div class="ham-menu"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
   
   <div class={showDropdown ? 'dropdown-content show' : 'dropdown-content'}>
     <a href="/home" on:click={closeDropdown}>Home</a>
