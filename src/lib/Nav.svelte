@@ -21,13 +21,13 @@
 </script>
 
 <nav class="navbar">
-  <!-- 
-</div>
+  
+
 
 <div class="container">
   <input type="text" placeholder="Search..." on:input={updateSearch}> 
   <div class="search"></div>
-</div> -->
+
 <input type="checkbox" id="check">
 <lable for="check" class="checkbtn">
   <i class="bars"></i>
@@ -44,6 +44,6 @@
     <li><a href="/books">Books</a></li>
     <li><a href="/home">Home</a></li>
    </ul>
-
-
 </nav>
+
+<section></section>
