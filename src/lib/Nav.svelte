@@ -21,7 +21,7 @@
 </script>
 
 <nav class="navbar">
-  <div class="nav-logo">
+  <!-- <div class="nav-logo">
     <a href="/" on:click={closeDropdown}>
         <img class="logo" src="https://toppng.com/uploads/preview/a-little-maid-neko-for-today-kawaii-neko-girl-chibi-11562928180umulz4qslj.png" alt="Site Logo">
     </a>
@@ -30,19 +30,16 @@
   <div class="container">
     <input type="text" placeholder="Search..." on:input={updateSearch}> 
     <div class="search"></div>
-  </div>
+  </div> -->
+  
+   <ul>
+    <li><aclass="" href="">Welcome</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Books</a></li>
+    <li><a href="">Home</a></li>
+   </ul>
 
-    <div class="ham-menu"> 
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   
-  
-  <div class={showDropdown ? 'dropdown-content show' : 'dropdown-content'}>
-    <a href="/home" on:click={closeDropdown}>Home</a>
-    <a href="/about" on:click={closeDropdown}>About</a>
-    <a href="/books" on:click={closeDropdown}>Books</a>
-  </div>
+
 
 </nav>
