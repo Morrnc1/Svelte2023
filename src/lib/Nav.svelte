@@ -28,12 +28,15 @@
   <input type="text" placeholder="Search..." on:input={updateSearch}> 
   <div class="search"></div>
 </div> -->
+<input type="checkbox" id="check">
+<lable for="check" class="checkcon">
+  <i class="bars"></i>
+</lable>
 
-  <div class="nav-logo">
-  <a href="/" on:click={closeDropdown}>
+
+<label class="nav-logo">
       <img class="logo" src="https://toppng.com/uploads/preview/a-little-maid-neko-for-today-kawaii-neko-girl-chibi-11562928180umulz4qslj.png" alt="Site Logo">
-  </a>
-  
+</label>
 
    <ul>
     <li><a class="" href="/">Welcome</a></li>
