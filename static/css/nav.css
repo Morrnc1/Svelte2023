@@ -51,3 +51,39 @@ li a:hover {
     background-color: var(--highlight-color);
     color: var(--bg-color);
 }
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: var(--sidebar-width);
+    background-color: var(--bg-color);
+    border-left: 3px solid var(--highlight-color);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+li:hover .submenu {
+    max-height: 300px;
+}
+
+.toggle {
+    width: var(--toggle-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: var(--highlight-color);
+    cursor: pointer;
+}
+
+.toggle:after {
+    content: "≡";
+}
