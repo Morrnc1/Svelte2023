@@ -1,0 +1,8 @@
+:root {
+    --bg-color: rgba(46, 58, 79, 0.9);
+    --text-color: #E0E0E0;
+    --highlight-color: #d400ff;
+    --font-size: 18px;
+    --sidebar-width: 240px;
+    --toggle-width: 30px;
+}
