@@ -2,7 +2,7 @@
     --bg-color: rgba(46, 58, 79, 0.9);
     --text-color: #E0E0E0;
     --highlight-color: #d400ff;
-    --font-size: 18px;
+    --font-size: 30px;
     --sidebar-width: 240px;
     --toggle-width: 30px;
 }
@@ -26,7 +26,7 @@
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 20px;
     color: var(--highlight-color);
 }
@@ -45,6 +45,7 @@ li a {
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-size: 0.7em;
 }
 
 li a:hover {
