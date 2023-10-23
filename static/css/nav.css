@@ -24,3 +24,9 @@
 .sidebar.show {
     width: var(--sidebar-width);
 }
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--highlight-color);
+}
