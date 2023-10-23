@@ -1,41 +1,52 @@
 <script>
-    import { books } from '$lib/store.js';
-</script>
-
-<div class="wrapper">
-  <div class="container">
+    import { onMount } from 'svelte';
+    let images = [];
     
-      <div class="banner">
-          <h1>Welcome to Our Audiobook Store</h1>
-      </div>
+    onMount(async () => {
+      const res = await fetch('$lib/images.js');
+      images = await res.json();
+    });
     
-      <div class="top-three">
-          <h2>Top Three of the Month</h2>
-          <div class="books-grid">
-              {#each $books.slice(0, 3) as book}
-                  <div class="book">
-                      <img src={book.image} alt={book.title} />
-                      <h3>{book.title}</h3>
-                      <p>Author: {book.author}</p>
-                      <p>Narrator: {book.narrator}</p>
-                      <p>Description: {book.description}</p>
-                  </div>
-              {/each}
-          </div>
-      </div>
-    
-      <div class="scrolling-section">
-          <div class="books-flex">
-              {#each $books as book}
-                  <div class="book">
-                      <img src={book.image} alt={book.title} />
-                      <h3>{book.title}</h3>
-                      <p>Author: {book.author}</p>
-                      <p>Narrator: {book.narrator}</p>
-                      <p>Description: {book.description}</p>
-                  </div>
-              {/each}
-          </div>
-      </div>
+    function navigateToHome() {
+      window.location.href = "/home";
+    }
+  </script>
+  
+  <style>
+    body {
+      background-color: black;
+    }
+  
+    .galaxy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+    }
+  
+    h1 {
+      color: white;
+      font-size: 8em;
+      cursor: pointer;
+    }
+  
+    h1:hover {
+      color: purple;
+      text-shadow: 0 0 10px purple;
+      animation: distort 1s infinite;
+    }
+  
+    @keyframes distort {
+      0%, 100% { transform: rotate(0); }
+      50% { transform: rotate(3deg); }
+    }
+  </style>
+  
+  <div class="galaxy" on:click={navigateToHome}>
+    <h1>Welcome to the Library</h1>
   </div>
-</div>
+  
+  {#each images as image (image.id)}
+    <img src={image.url} alt="Galaxy Image" hidden />
+  {/each}
+  
