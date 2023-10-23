@@ -36,6 +36,7 @@
 
 .scrolling-section {
   overflow-x: auto;
+  overflow: hidden;
 }
 
 .books-flex {
