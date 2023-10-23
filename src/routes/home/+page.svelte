@@ -5,7 +5,9 @@
   books.subscribe(value => {
     bookList = value;
   });
+  
 </script>
+  <link rel="stylesheet" href="css/home.css" />
 
 <div id="banner">
   <h1>Explore a Universe of Books</h1>
