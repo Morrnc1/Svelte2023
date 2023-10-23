@@ -16,22 +16,44 @@ body {
 
 #content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  grid-template-areas: "top-three" "book-slider";
+  grid-gap: 20px;
   padding: 20px;
 }
 
-#top-three, .book, .book-slide {
+#top-three {
+  grid-area: top-three;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
-.book, .book-slide {
+.book {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
   align-items: center;
 }
 
-.book img, .book-slide img {
-  max-width: 100px;
-  max-height: 100px;
+.book img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#book-slider {
+  grid-area: book-slider;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.book-slide {
+  min-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    grid-template-areas: "top-three" "book-slider";
+  }
 }

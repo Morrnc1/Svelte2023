@@ -1,11 +1,8 @@
 <script>
   import { books } from '$lib/store.js';
-  let bookList = [];
 
-  books.subscribe(value => {
-    bookList = value;
-  });
-  
+  let bookList = [];
+  books.subscribe(data => bookList = data);
 </script>
   <link rel="stylesheet" href="css/home.css" />
 
@@ -18,28 +15,22 @@
     <h2>Top Three</h2>
     {#each bookList.slice(0, 3) as book}
       <div class="book">
-        <img src={book.image} alt={book.title} />
-        <div>
-          <h3>{book.title}</h3>
-          <p>Author: {book.author}</p>
-          <p>Genre: {book.genre}</p>
-        </div>
+        <img src="{book.image}" alt="{book.title}">
+        <h3>{book.title}</h3>
+        <p>Author: {book.author}</p>
       </div>
     {/each}
   </div>
-
+  
   <div id="book-slider">
-    <button class="slider-arrow" id="prev">❮</button>
     {#each bookList as book}
       <div class="book-slide">
-        <img src={book.image} alt={book.title} />
-        <div>
-          <h3>{book.title}</h3>
-          <p>Author: {book.author}</p>
-          <p>Genre: {book.genre}</p>
-        </div>
+        <img src="{book.image}" alt="{book.title}">
+        <h3>{book.title}</h3>
+        <p>Author: {book.author}</p>
+        <p>Narrator: TBD</p>
+        <p>Description: TBD</p>
       </div>
     {/each}
-    <button class="slider-arrow" id="next">❯</button>
   </div>
 </div>
