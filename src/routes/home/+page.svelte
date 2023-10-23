@@ -1,36 +1,41 @@
 <script>
   import { books } from '$lib/store.js';
-
-  let bookList = [];
-  books.subscribe(data => bookList = data);
 </script>
-  <link rel="stylesheet" href="css/home.css" />
+<link rel="stylesheet" href="css/home.css" />
 
-<div id="banner">
-  <h1>Explore a Universe of Books</h1>
-</div>
-
-<div id="content">
-  <div id="top-three">
-    <h2>Top Three</h2>
-    {#each bookList.slice(0, 3) as book}
-      <div class="book">
-        <img src="{book.image}" alt="{book.title}">
-        <h3>{book.title}</h3>
-        <p>Author: {book.author}</p>
-      </div>
-    {/each}
-  </div>
+<div class="wrapper">
+<div class="container">
+    <div class="banner">
+        <h1>The Void Libary</h1>
+    </div>
   
-  <div id="book-slider">
-    {#each bookList as book}
-      <div class="book-slide">
-        <img src="{book.image}" alt="{book.title}">
-        <h3>{book.title}</h3>
-        <p>Author: {book.author}</p>
-        <p>Narrator: TBD</p>
-        <p>Description: TBD</p>
-      </div>
-    {/each}
-  </div>
+    <div class="top-three">
+        <h2>Top Three of the Month</h2>
+        <div class="books-grid">
+            {#each $books.slice(0, 3) as book}
+                <div class="book">
+                    <img src={book.image} alt={book.title} />
+                    <h3>{book.title}</h3>
+                    <p>Author: {book.author}</p>
+                    <p>Narrator: {book.narrator}</p>
+                    <p>Description: {book.description}</p>
+                </div>
+            {/each}
+        </div>
+    </div>
+  
+    <div class="scrolling-section">
+        <div class="books-flex">
+            {#each $books as book}
+                <div class="book">
+                    <img src={book.image} alt={book.title} />
+                    <h3>{book.title}</h3>
+                    <p>Author: {book.author}</p>
+                    <p>Narrator: {book.narrator}</p>
+                    <p>Description: {book.description}</p>
+                </div>
+            {/each}
+        </div>
+    </div>
+</div>
 </div>
