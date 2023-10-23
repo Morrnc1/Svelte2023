@@ -1,3 +1,14 @@
+<script>
+  let showMenu = false;
+
+  function toggleMenu() {
+      showMenu = !showMenu;
+  }
+
+  function collapseMenu() {
+      showMenu = false;
+  }
+</script>
 <div class="toggle" on:click={toggleMenu}></div>
 <div class={`sidebar ${showMenu ? 'show' : ''}`} on:mouseleave={collapseMenu}>
     <h3>Menu</h3>
