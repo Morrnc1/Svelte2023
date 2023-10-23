@@ -1,65 +1,23 @@
 <script>
     import { onMount } from 'svelte';
-
-    let pokemonList = [];
-    let offset = 0; 
-    const TOTAL_POKEMON = 151; 
-    const BASE_URL = `https://pokeapi.co/api/v2`;
-
-    async function fetchPokemon() {
-        const response = await fetch(`${BASE_URL}/pokemon?limit=${TOTAL_POKEMON}&offset=${offset}`);
-        const data = await response.json();
-        pokemonList = pokemonList.concat(data.results.sort((a, b) => a.name.localeCompare(b.name)));
-    }
-
-    function startScrolling() {
-        const gallery = document.querySelector('.grid');
-        setInterval(() => {
-            gallery.scrollLeft += 1;
-
-            if (gallery.scrollLeft >= gallery.scrollWidth - window.innerWidth) {
-                offset += TOTAL_POKEMON;
-                fetchPokemon();
-            }
-        }, 20);
-    }
-
-    onMount(() => {
-        fetchPokemon().then(() => {
-            startScrolling();
-        });
-    });
-</script>
-
-<style>
-    body {
-        margin: 0;
-        overflow: hidden;
-    }
+    let images = [];
     
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 100px);
-        grid-template-rows: repeat(4, 100px);
-        overflow-x: scroll;
-        overflow-y: hidden;
-        height: 400px;
-        width: 100vw;
-        position: relative;
+    onMount(async () => {
+      const res = await fetch('$lib/images.js');
+      images = await res.json();
+    });
+    
+    function navigateToHome() {
+      window.location.href = "/home";
     }
-
-    .grid::-webkit-scrollbar {
-        display: none;
-    }
-
-    img {
-        width: 100px;
-        height: 100px;
-    }
-</style>
-
-<div class="grid">
-    {#each pokemonList as pokemon}
-        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.split('/')[6]}.png`} alt={pokemon.name} />
-    {/each}
-</div>
+  </script>
+  
+  
+  <div class="galaxy" on:click={navigateToHome}>
+    <h1>Welcome to the Library</h1>
+  </div>
+  
+  {#each images as image (image.id)}
+    <img src={image.url} alt="Galaxy Image" hidden />
+  {/each}
+  
