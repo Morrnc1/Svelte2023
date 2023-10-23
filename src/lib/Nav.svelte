@@ -18,7 +18,7 @@
         <li><a href="/home" on:click={collapseMenu}>Home</a></li>
         <li>
             <a href="/books">Books</a>
-            <div class="submenu">
+            <div class="submenu" on:hover={toggleMenu}>
                 <ul>
                     <li><a href="/books?genre=litrpg" on:click={collapseMenu}>LitRPG</a></li>
                     <li><a href="/books?genre=apocalypse" on:click={collapseMenu}>Apocalypse</a></li>
