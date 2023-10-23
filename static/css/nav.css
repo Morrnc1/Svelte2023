@@ -6,3 +6,21 @@
     --sidebar-width: 240px;
     --toggle-width: 30px;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: var(--toggle-width);  
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--bg-color);
+    transition: width 0.3s;
+    padding: 1px;
+    font-size: var(--font-size);
+    z-index: 2;
+}
+
+.sidebar.show {
+    width: var(--sidebar-width);
+}
