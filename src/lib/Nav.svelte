@@ -9,6 +9,8 @@
       showMenu = false;
   }
 </script>
+<link rel="stylesheet" href="css/nav.css" />
+
 <div class="toggle" on:click={toggleMenu}></div>
 <div class={`sidebar ${showMenu ? 'show' : ''}`} on:mouseleave={collapseMenu}>
     <h3>Menu</h3>
