@@ -1,5 +1,5 @@
 <script>
-  import { books } from './bookStore.js';
+  import { books } from '$lib/store.js';
   let bookList = [];
 
   books.subscribe(value => {
@@ -24,5 +24,20 @@
         </div>
       </div>
     {/each}
+  </div>
+
+  <div id="book-slider">
+    <button class="slider-arrow" id="prev">❮</button>
+    {#each bookList as book}
+      <div class="book-slide">
+        <img src={book.image} alt={book.title} />
+        <div>
+          <h3>{book.title}</h3>
+          <p>Author: {book.author}</p>
+          <p>Genre: {book.genre}</p>
+        </div>
+      </div>
+    {/each}
+    <button class="slider-arrow" id="next">❯</button>
   </div>
 </div>
