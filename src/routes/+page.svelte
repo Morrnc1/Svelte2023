@@ -12,6 +12,35 @@
     }
   </script>
   
+  <style>
+    body {
+      background-color: black;
+    }
+  
+    .galaxy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+    }
+  
+    h1 {
+      color: white;
+      font-size: 8em;
+      cursor: pointer;
+    }
+  
+    h1:hover {
+      color: purple;
+      text-shadow: 0 0 10px purple;
+      animation: distort 1s infinite;
+    }
+  
+    @keyframes distort {
+      0%, 100% { transform: rotate(0); }
+      50% { transform: rotate(3deg); }
+    }
+  </style>
   
   <div class="galaxy" on:click={navigateToHome}>
     <h1>Welcome to the Library</h1>
