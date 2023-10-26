@@ -13,9 +13,7 @@
   </script>
   
   <style>
-    body {
-      background-color: black;
-    }
+   
   
     .galaxy {
       display: flex;

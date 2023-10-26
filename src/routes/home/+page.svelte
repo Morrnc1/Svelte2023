@@ -24,7 +24,8 @@
           {/each}
         </div>
       </div>
-      
+      <h2>Good listens</h2>
+
       <div class="scrolling-section">
         <div class="books-flex">
             {#each $books as book}
