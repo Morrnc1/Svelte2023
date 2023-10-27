@@ -1,66 +1,54 @@
 <script>
-  import { books, selectedGenre, searchTerm } from "$lib/store.js";
+  import { books } from '$lib/store.js'; 
 
-  let genres = new Set($books.map(book => book.genre));
-  function filterBooks(genre) {
-    return $books.filter(book => book.genre === genre && 
-      (book.title.toLowerCase().includes($searchTerm.toLowerCase()) || 
-       book.author.toLowerCase().includes($searchTerm.toLowerCase())));
-  }
-
-  function scrollLeft(event) {
-    let container = event.target.closest(".genre-row");
-    container.scrollLeft -= 300; 
-  }
-
-  function scrollRight(event) {
-    let container = event.target.closest(".genre-row");
-    container.scrollLeft += 300; 
-  }
+  let bookArray = [];
+  
+  books.subscribe(value => {
+    bookArray = value;
+  });
 </script>
-<link rel="stylesheet" href="css/books.css" />
 
 <style>
-  .genre-row {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    gap: 20px;
-    position: relative;
+  .book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(128, 0, 128, 0.1); 
+  }
+  
+  .book-card {
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .movement {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1;
+  .book-card img {
+    max-width: 100%;
+    border-radius: 5px;
   }
 
-  .movement.left { left: 0; }
-  .movement.right { right: 0; }
+  h3 {
+    font-size: 1.5rem;
+    color: purple;
+  }
 
+  p {
+    font-size: 1rem;
+    color: white;
+  }
 </style>
 
 <main class="book-container">
-  {#each genres as genre}
-    <h2>{genre}</h2>
-    <div class="genre-row">
-      <div class="movement left" on:click={scrollLeft}>◀</div>
-      {#each filterBooks(genre) as book}
-        <div class="book-card">
-          <img src={book.image} alt={book.title} />
-          <h3>{book.title}</h3>
-          <p>{book.author}</p>
-        </div>
-      {/each}
-      <div class="movement right" on:click={scrollRight}>▶</div>
+  {#each bookArray as book}
+    <div class="book-card">
+      <img src={book.image} alt={book.title} />
+      <h3>{book.title}</h3>
+      <p>By: {book.author}</p>
+      {#if book.narrator}
+        <p>Narrated by: {book.narrator}</p>
+      {/if}
     </div>
   {/each}
 </main>
