@@ -1,8 +1,25 @@
 
+<link rel="stylesheet" href="css/footer.css" />
 
 <footer class="footer">
-  <div class="footer-container">
-    <p>&copy; 2023 Your Library</p> 
-    <div class="content"> </div>
+  <div class="codetheworld-io">
+    <a href="#" style="color: #0072b1">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  
+    <a href="#" style="color: #E1306C">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  
+    <a href="#" style="color: #FF0050">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  
+    <a href="#" style="color: #4267B2">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
   </div>
 </footer>
+
+
+  
