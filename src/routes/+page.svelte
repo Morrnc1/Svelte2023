@@ -24,7 +24,7 @@
   
     h1 {
       color: white;
-      font-size: 8em;
+      font-size: 4em;
       cursor: pointer;
     }
   

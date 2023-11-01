@@ -7,7 +7,9 @@
     --toggle-width: 30px;
 }
 
-
+body {
+    z-index: 20;
+}
 .sidebar {
     position: fixed;
     top: 0;
@@ -19,7 +21,6 @@
     transition: width 0.3s;
     padding: 1px;
     font-size: var(--font-size);
-    z-index: 4;
 }
 
 .sidebar.show {
