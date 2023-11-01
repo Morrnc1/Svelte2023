@@ -6,13 +6,10 @@
 }
 
 .container {
-<<<<<<< HEAD
-  max-width: 1200px;
-  padding: 20px 50px; 
-=======
+
+
   max-width: 900px;
   padding: 20px;
->>>>>>> a866764a74d074f0175dd91faa447cc49a74c761
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
