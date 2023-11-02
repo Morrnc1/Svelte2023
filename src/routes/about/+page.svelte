@@ -87,10 +87,22 @@
   }
 
   .story {
-    margin-top: 30px;
-    font-size: 1.2em;
-    opacity: 50;
+    margin: 50px auto;
+    padding: 20px;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: opacity 1s;
+  }
+
+  .story p {
+    transition: color 0.5s;
+  }
+
+  .story p:hover {
+    color: #8D58B5; 
+    text-shadow: 0 0 5px #8D58B5; 
   }
 
 </style>
