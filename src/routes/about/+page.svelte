@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
 
   let images = [];
-  const bubblesPerClick = 3;
+  const bubblesPerClick = 8;
   const maxImages = 15;
 
   async function fetchRandomImages() {
@@ -29,6 +29,7 @@
     background-color: #030317;
     color: #fff;
     overflow-x: hidden;
+    overflow: hidden;
   }
 
   .container {
@@ -88,7 +89,7 @@
   .story {
     margin-top: 30px;
     font-size: 1.2em;
-    opacity: 0;
+    opacity: 50;
     transition: opacity 1s;
   }
 
@@ -100,11 +101,11 @@
   {#each images as image (image.id)}
     <img src={image.url} alt="A magical image from the library" style="--random-factor: {Math.random()}" />
   {/each}
-  <div class="story" style="opacity: {yOffset > 50 ? 1 : 0}">
-    <p>Deep in the vast expanse of the void, away from the mundane world, there exists a library unlike any other.</p>
-    <p>It floats, untethered to time and space, a nexus of ancient knowledge and arcane power.</p>
-    <p>Legends speak of wizards and mages who sought the drifting library, hoping to borrow its esoteric tomes.</p>
-    <p>Many got lost in the eternal abyss, while a lucky few returned, their powers magnified tenfold.</p>
-    <p>Now, as you scroll, you embark on this mystical journey, treading where few dare, seeking the knowledge of the drifting library.</p>
-  </div>
+</div>
+<div class="story">
+  <p>Deep in the vast expanse of the void, away from the mundane world, there exists a library unlike any other.</p>
+  <p>It floats, untethered to time and space, a nexus of ancient knowledge and arcane power.</p>
+  <p>Legends speak of wizards and mages who sought the drifting library, hoping to borrow its esoteric tomes.</p>
+  <p>Many got lost in the eternal abyss, while a lucky few returned, their powers magnified tenfold.</p>
+  <p>Now, as you scroll, you embark on this mystical journey, treading where few dare, seeking the knowledge of the drifting library.</p>
 </div>
