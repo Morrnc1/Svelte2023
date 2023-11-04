@@ -10,7 +10,9 @@
     function navigateToHome() {
       window.location.href = "/home";
     }
-  </script>
+
+
+</script>
   
   <style>
    

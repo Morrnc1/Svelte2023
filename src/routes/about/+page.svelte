@@ -8,11 +8,12 @@
 
 
   let storyContent = [
-    "Deep in the vast expanse of the void, away from the mundane world, there exists a library unlike any other.",
-    "It floats, untethered to time and space, a nexus of ancient knowledge and arcane power.",
-    "Legends speak of wizards and mages who sought the drifting library, hoping to borrow its esoteric tomes.",
-    "Many got lost in the eternal abyss, while a lucky few returned, their powers magnified tenfold.",
-    "Now, as you scroll, you embark on this mystical journey, treading where few dare, seeking the knowledge of the drifting library."
+    "Deep in the vast expanse of the void, away from the mundane world, there exists a library ",
+    "unlike any other. It floats, untethered to time and space, a nexus of ancient knowledge and ",
+    "arcane power. Legends speak of wizards and mages who sought the drifting library, hoping ",
+    "to borrow its esoteric tomes. Many got lost in the eternal abyss, while a lucky few returned,",
+    " their powers magnified tenfold.Now, as you scroll, you embark on this mystical journey,",
+    " treading where few dare, seeking the knowledge of the drifting library."
   ];
 
   async function toggleBubbles() {
@@ -115,18 +116,18 @@
 <div class="container">
   <h1 class="title">The Drifting Library of Magic</h1>
   <button on:click={toggleBubbles} class={showBubbles ? '' : 'toggle-off'}>{showBubbles ? 'Hide Magical Images' : 'Discover Magical Images'}</button>
-  {#if showBubbles}
-    {#each images as imageUrl, index}
-      <img src={imageUrl} alt="A magical image" style="left: {Math.random() * 80}%; top: {Math.random() * 80}%;" />
-    {/each}
-  {/if}
   <div class="story">
     {#each storyContent as line (line)}
-      <p>
-        {#each line.split(' ') as word}
-          <span>{word}&nbsp;</span>
-        {/each}
-      </p>
+    <p>
+      {#each line.split(' ') as word}
+      <span>{word}&nbsp;</span>
+      {/each}
+    </p>
     {/each}
   </div>
 </div>
+{#if showBubbles}
+  {#each images as imageUrl, index}
+    <img src={imageUrl} alt="A magical image" style="left: {Math.random() * 80}%; top: {Math.random() * 80}%;" />
+  {/each}
+{/if}

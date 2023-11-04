@@ -2,29 +2,42 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     justify-content: center;
-    padding: 10px 20px;
-    background-color: #333;
-}
-
-.social-icons {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 15px 25px;
+    background-color: rgba(46, 58, 79, 0.9);
 }
 
-.footer-content {
-    width: 67%;
+.codetheworld-io {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+    width: 100%;
 }
-
 .social-icon {
     color: inherit;
     transition: 0.5s;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+}
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top, rgba(146, 102, 150, 0.3) 0%, transparent 70%);
+    transform: translateY(-75%);
+    transition: 0.5s;
 }
 
-.social-icon:hover {
-    filter: brightness(1.2);
+.social-icon:hover::before {
+    transform: translateY(0%);
 }
