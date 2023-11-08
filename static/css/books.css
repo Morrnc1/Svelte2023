@@ -1,13 +1,10 @@
 .book-container {
-    width: 80vw; 
-    margin: 5vh auto; 
-    padding: 2vw; 
-    background-color: rgba(0, 0, 0, 0.8);
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(128, 0, 128, 0.1); 
+  }
 
 .book-card {
     flex: 0 0 calc(33.33% - 1rem);
