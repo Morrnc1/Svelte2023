@@ -150,6 +150,10 @@ As with any journey through uncharted realms, there are a few mystical anomalies
 - **Missing Dropdown for Books**: The navigational conduit meant to reveal a dropdown list for the "Books" section is currently non-operational. Plans to restore this pathway are in motion.
 
 - **About Page Image Conjuration Glitch**: If you invoke the magical images on the About Page by pressing the image button, and then attempt to dismiss and re-conjure them, an enchantment overflow occurs. This results in the manifestation of an excessive number of image bubbles, which may clutter your view of the cosmos.
+  
+- **Intrusive Search Results**: On the books page, users may encounter a visual disturbance when searching for specific titles. The search functionality is designed to present results in a grid layout, akin to books on shelves. However, due to a formatting discrepancy, the books sometimes appear too prominently, metaphorically "flying" towards the user and invading the visual space intended for a more subdued display. This bug can disrupt the calm, library-like atmosphere we aim to maintain.
+
+- **Grid Formatting Overlap**: The underlying cause has been traced to a grid formatting issue where the algorithm that places the books within the virtual shelves needs refinement. Our team is investigating the CSS grid properties to correct the spatial distribution of search results.
 
 We are actively working to mend the fabric of our digital cosmos and resolve these anomalies.
 
