@@ -1,5 +1,7 @@
+/* Importing icons from FontAwesome for use in the footer */
 @import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
 
+/* Base styling for the footer, centered with a semi-transparent background */
 .footer {
     display: flex;
     justify-content: center;
@@ -7,6 +9,7 @@
     background-color: rgba(46, 58, 79, 0.9);
 }
 
+/* Container for the website or organization name, centered with a gap between elements */
 .codetheworld-io {
     display: flex;
     justify-content: center;
@@ -14,6 +17,8 @@
     gap: 25px; 
     width: 100%;
 }
+
+/* Styling for individual social icons, with a transition effect for interactivity */
 .social-icon {
     color: inherit;
     transition: 0.5s;
@@ -25,6 +30,8 @@
     position: relative;
     overflow: hidden; 
 }
+
+/* Pseudo-element for a radial gradient effect behind social icons, initially placed off-screen */
 .social-icon::before {
     content: '';
     position: absolute;
@@ -37,6 +44,7 @@
     transition: 0.5s;
 }
 
+/* Transition effect for the radial gradient background on hover, moving it to cover the icon */
 .social-icon:hover::before {
     transform: translateY(0%);
 }
