@@ -79,6 +79,9 @@ Each feature has been carefully crafted to provide an engaging user experience t
 
 ## Screenshots and Layout Design
 ![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/16678fc2-e97b-4e89-90ca-bedb99525887)
+```
+https://www.audible.com
+```
 ### Top Three and Card Layout
 
 The visual arrangement of content on our "Books" page owes its sleek and functional design to the inspiration drawn from the well-established layouts seen on audiobook platforms like Audible. Particularly, the following elements were adapted to create an engaging user interface:
@@ -88,7 +91,11 @@ The visual arrangement of content on our "Books" page owes its sleek and functio
 - **Card-Style Book Display**: The card layout that organizes each book into its own distinct tile is a direct nod to Audible's approach. While we've personalized the style to fit our site's aesthetic, the concept remains the same – to offer a stylish yet functional display that allows for easy browsing and selection of audiobooks.
 
 These elements have been carefully woven into our design to combine aesthetic appeal with usability, ensuring that every visit to the Void Library is both enchanting and efficient.
+
 ![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/9a7dff1d-459b-4298-83bb-a6298fa443ca)
+```
+https://www.royalroad.com/forums
+```
 ### Unified Background Theme
 
 - **Consistent Background**: To create a sense of unity throughout the site, we've employed a single background theme that threads each page together. This not only reinforces brand identity but also provides a consistent canvas upon which all our content can shine.
@@ -100,7 +107,11 @@ These elements have been carefully woven into our design to combine aesthetic ap
 - **Container Theme**: Drawing inspiration from the structured and centered content display seen on Royal Roads, we've embraced a containerized layout for our content. This approach serves to centralize our text and media, making the website feel more organized and accessible.
 
 - **About Page Narrative**: In the 'About' section, we've implemented the container theme to encapsulate our story, crafting a dedicated space where the narrative is focal, surrounded by the thematic elements that define our magical library. The story container not only aligns with our overall design strategy but also creates an intimate setting for visitors to connect with the ethos of the Void Library.
+  
 ![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/4eb504cc-6f82-4ded-9764-96d9ccd1fcd1)
+```
+https://www.awwwards.com/sites/fantasy-1
+```
 
 ### Welcome Screen
 
