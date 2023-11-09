@@ -1,3 +1,5 @@
+<!-- About page component with dynamic content and image loader -->
+
 <script>
   import { onMount } from "svelte";
 
@@ -6,6 +8,7 @@
   const maxImages = 15;
   let showBubbles = false;
 
+  // Story content for the about page, split into an array of sentences
   let storyContent = [
     "Deep in the vast expanse of the void, away from the mundane world, there exists a library ",
     "unlike any other. It floats, untethered to time and space, a nexus of ancient knowledge and ",
@@ -15,9 +18,11 @@
     " treading where few dare, seeking the knowledge of the drifting library.",
   ];
 
+  // Function to load images from an API and toggle their display
   async function toggleBubbles() {
     showBubbles = !showBubbles;
 
+    // Load new images if under max limit
     if (showBubbles && images.length < maxImages) {
       for (let i = 0; i < bubblesPerClick && images.length < maxImages; i++) {
         const response = await fetch(`https://picsum.photos/50/50`);
@@ -26,6 +31,7 @@
     }
   }
 
+  // Initial check to load images if bubbles are to be shown
   onMount(() => {
     if (showBubbles) {
       toggleBubbles();
@@ -35,11 +41,15 @@
 
 <link rel="stylesheet" href="css/about.css" />
 
+<!-- Main container for the about page content -->
 <div class="container">
   <h1 class="title">History Of The Void</h1>
+  <!-- Button to toggle the display of images -->
   <button on:click={toggleBubbles} class={showBubbles ? "" : "toggle-off"}
     >{showBubbles ? "Hide Magical Images" : "Discover Magical Images"}</button
   >
+
+  <!-- Paragraphs displaying the story content -->
   <div class="story">
     {#each storyContent as line (line)}
       <p>
@@ -50,6 +60,8 @@
     {/each}
   </div>
 </div>
+
+<!-- Conditionally rendered images, displayed if showBubbles is true -->
 {#if showBubbles}
   {#each images as imageUrl, index}
     <!-- svelte-ignore a11y-img-redundant-alt -->
