@@ -1,76 +1,88 @@
+/* Sets the default font, background color, text color, and prevents scrolling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #030317;
-    color: #fff;
-    overflow: hidden; 
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #030317;
+  color: #fff;
+  overflow: hidden; 
+}
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2em;
-    text-align: center;
-    position: relative;
-    overflow: hidden; 
-  }
-  .title {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-  }
+/* Styles the main container for content, centering it and applying padding */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  overflow: hidden; 
+}
 
-  button {
-    padding: 0.5em 1em;
-    background: linear-gradient(to right, #6D5BBA, #8D58B5);
-    border: none;
-    border-radius: 25px;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(141,88,181,.5);
-    cursor: pointer;
-    transition: transform .2s;
-  }
+/* Increases the size and margin of the main title for emphasis */
+.title {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
 
-  button:hover {
-    transform: scale(1.05);
-  }
+/* Styles the button with a gradient, rounded corners, and a subtle shadow */
+button {
+  padding: 0.5em 1em;
+  background: linear-gradient(to right, #6D5BBA, #8D58B5);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(141,88,181,.5);
+  cursor: pointer;
+  transition: transform .2s; /* Smooth scaling effect for hover */
+}
 
-  img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    position: absolute;
-    animation: float 5s infinite;
-    opacity: 0.7;
-    box-shadow: 0 0 10px #6D5BBA;
-    transform: translateY(0);
-  }
+/* Scales the button up slightly on hover for interactive feedback */
+button:hover {
+  transform: scale(1.05);
+}
 
-  @keyframes float {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-100vh); }
-  }
+/* Styles the images to be circular, floating, and with a subtle shadow */
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  animation: float 5s infinite; /* Applies a floating animation */
+  opacity: 0.7;
+  box-shadow: 0 0 10px #6D5BBA;
+}
 
-  .story {
-    margin-top: 30px;
-    font-size: 1.2em;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-  }
+/* Defines the floating animation, causing the images to move upwards over time */
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100vh); }
+}
 
-  .story span {
-    transition: color 0.5s;
-    cursor: pointer;
-  }
+/* Styles the story text area with a semi-transparent background and rounded corners */
+.story {
+  margin-top: 30px;
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
 
-  .story span:hover {
-    color: #8D58B5;
-    text-shadow: 0 0 5px #8D58B5;
-  }
+/* Allows for interactive color change on hover over each word */
+.story span {
+  transition: color 0.5s;
+  cursor: pointer;
+}
 
-  .hidden {
-    display: none;
-  }
+/* Changes the text color and adds a glow effect on hover */
+.story span:hover {
+  color: #8D58B5;
+  text-shadow: 0 0 5px #8D58B5;
+}
 
-  .toggle-off {
-    background: linear-gradient(to right, #B5585B, #B58D5D);
-  }
+/* Utility class to hide elements */
+.hidden {
+  display: none;
+}
+
+/* Alternate button style for when toggling off */
+.toggle-off {
+  background: linear-gradient(to right, #B5585B, #B58D5D);
+}

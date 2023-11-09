@@ -1,5 +1,6 @@
+<!-- Layout component: Defines the structure shared by all pages, including navigation and footer -->
+
 <script>
-    import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte';
     import Nav from '$lib/Nav.svelte';
 </script>

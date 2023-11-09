@@ -1,11 +1,6 @@
-<script>
-  import { onMount } from "svelte";
-  let images = [];
+<!-- Welcome page component: Displays a welcome message and background images fetched from an API -->
 
-  onMount(async () => {
-    const res = await fetch("$lib/images.js");
-    images = await res.json();
-  });
+<script>
 
   function navigateToHome() {
     window.location.href = "/home";
@@ -16,11 +11,8 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
+
+<!-- Interactable galaxy image that navigates to home page on click -->
 <div class="galaxy" on:click={navigateToHome}>
   <h1>Welcome to the Library</h1>
 </div>
-
-<!-- svelte-ignore a11y-img-redundant-alt -->
-{#each images as image (image.id)}
-  <img src={image.url} alt="Galaxy Image" hidden />
-{/each}
