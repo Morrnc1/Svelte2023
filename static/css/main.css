@@ -1,4 +1,6 @@
-body, html {
+/*Base page styles for accompanying elements*/
+body,
+html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -10,7 +12,9 @@ body, html {
 }
 
 
-.header, .footer, .nav {
+.header,
+.footer,
+.nav {
   background-color: rgb(0, 0, 0);
 }
 
@@ -30,6 +34,7 @@ a {
 .content {
   flex: 1;
 }
+
 .header {
   background-color: black;
   color: white;
@@ -39,4 +44,3 @@ a {
   align-items: center;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
-

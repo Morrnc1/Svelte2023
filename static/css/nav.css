@@ -1,3 +1,4 @@
+/* Defining root variables for consistent styling */
 :root {
     --bg-color: rgba(46, 58, 79, 0.9);
     --text-color: #E0E0E0;
@@ -7,9 +8,12 @@
     --toggle-width: 30px;
 }
 
+/* Base z-index for body to ensure proper stacking */
 body {
     z-index: 20;
 }
+
+/* Side navigation bar hidden by default */
 .sidebar {
     position: fixed;
     top: 0;
@@ -23,6 +27,7 @@ body {
     font-size: var(--font-size);
 }
 
+/* Shows sidebar when the 'show' class is applied */
 .sidebar.show {
     width: var(--sidebar-width);
 }
@@ -55,6 +60,7 @@ li a:hover {
     color: var(--bg-color);
 }
 
+/* Hidden submenu that expands on hover */
 .submenu {
     max-height: 0;
     overflow: hidden;
@@ -68,10 +74,13 @@ li a:hover {
     border-radius: 5px;
     margin-top: 10px;
 }
+
+/* Reveals the submenu when list item is hovered */
 li:hover .submenu {
     max-height: 300px;
 }
 
+/* Styling for the sidebar toggle button */
 .toggle {
     width: var(--toggle-width);
     height: 100vh;

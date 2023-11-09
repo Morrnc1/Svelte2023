@@ -1,3 +1,4 @@
+/* Container for the galaxy section, centered both vertically and horizontally */
 .galaxy {
     display: flex;
     align-items: center;
@@ -17,6 +18,7 @@ h1:hover {
     animation: distort 1s infinite;
 }
 
+/* Keyframe animation to create a subtle distortion effect on the heading */
 @keyframes distort {
 
     0%,
