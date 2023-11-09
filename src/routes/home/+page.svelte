@@ -24,7 +24,7 @@
           {/each}
         </div>
       </div>
-      <h2>About This Site</h2>
+      <h2>Books Coming Soon</h2>
 
       <div class="scrolling-section">
         <div class="books-flex">
