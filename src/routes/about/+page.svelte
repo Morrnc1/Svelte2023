@@ -52,6 +52,7 @@
 </div>
 {#if showBubbles}
   {#each images as imageUrl, index}
+    <!-- svelte-ignore a11y-img-redundant-alt -->
     <img
       src={imageUrl}
       alt="A magical image"
