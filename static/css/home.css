@@ -1,3 +1,4 @@
+/* A flexible container that centers its children and takes at least the full viewport height */
 .wrapper {
   display: flex;
   justify-content: center;
@@ -5,9 +6,8 @@
   min-height: 100vh;
 }
 
+/* A constrained container for content with a white background and subtle shadow for depth */
 .container {
-
-
   max-width: 900px;
   padding: 20px;
   background-color: #fff;
@@ -15,9 +15,10 @@
   border-radius: 5px;
 }
 
+/* A stylized header area within the container, typically for titles or featured content */
 .banner {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   height: 200px;
   background-color: #333;
@@ -26,10 +27,12 @@
   margin-bottom: 20px;
 }
 
+/* Section container for the top three items, with a bottom margin for spacing */
 .top-three {
   margin-bottom: 20px;
 }
 
+/* Grid layout for books that wraps and maintains consistent gaps between items */
 .books-grid {
   display: flex;
   flex-wrap: wrap;
@@ -37,33 +40,38 @@
   justify-content: space-between;
 }
 
+/* Allows for horizontal scrolling on overflow, usually for a set of items like a carousel */
 .scrolling-section {
   overflow-x: auto;
 }
 
+/* Flexible box layout for books that wraps and has gaps, likely used within the scrolling section */
 .books-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+/* Individual book styling with a clean background, rounded corners, padding, and shadow */
 .book {
   background-color: #fff;
   border-radius: 5px;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 250px; 
+  max-width: 250px;
   width: 100%;
   transition: transform 0.3s ease;
 }
 
+/* Scales up the book card slightly when hovered over, and raises its stack order */
 .book:hover {
   transform: scale(1.05);
   z-index: 1;
 }
 
+/* Ensures images are responsive and fit their containers, maintaining their aspect ratios */
 img {
   max-width: 100%;
-  height: auto; 
+  height: auto;
   border-radius: 5px;
 }

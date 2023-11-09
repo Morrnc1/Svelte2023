@@ -3,7 +3,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #030317;
   color: #fff;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Styles the main container for content, centering it and applying padding */
@@ -13,7 +13,7 @@ body {
   padding: 2em;
   text-align: center;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Increases the size and margin of the main title for emphasis */
@@ -29,9 +29,10 @@ button {
   border: none;
   border-radius: 25px;
   color: #fff;
-  box-shadow: 0 0 10px rgba(141,88,181,.5);
+  box-shadow: 0 0 10px rgba(141, 88, 181, .5);
   cursor: pointer;
-  transition: transform .2s; /* Smooth scaling effect for hover */
+  transition: transform .2s;
+  /* Smooth scaling effect for hover */
 }
 
 /* Scales the button up slightly on hover for interactive feedback */
@@ -45,15 +46,21 @@ img {
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  animation: float 5s infinite; /* Applies a floating animation */
+  animation: float 5s infinite;
+  /* Applies a floating animation */
   opacity: 0.7;
   box-shadow: 0 0 10px #6D5BBA;
 }
 
 /* Defines the floating animation, causing the images to move upwards over time */
 @keyframes float {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-100vh); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100vh);
+  }
 }
 
 /* Styles the story text area with a semi-transparent background and rounded corners */

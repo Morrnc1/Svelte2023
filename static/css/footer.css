@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px; 
+    gap: 25px;
     width: 100%;
 }
 
@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 /* Pseudo-element for a radial gradient effect behind social icons, initially placed off-screen */
