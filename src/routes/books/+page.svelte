@@ -3,18 +3,15 @@
   
   let bookArray = [];
   let filterTerm = '';
-
-  // Subscription to the books store
+// subscribe is a svelt thing for stores
   books.subscribe((value) => {
     bookArray = value;
   });
 
-  // Subscription to the search term store
   searchTerm.subscribe((value) => {
     filterTerm = value.toLowerCase();
   });
 
-  // Derived array based on the search term
   $: filteredBooks = bookArray.filter((book) =>
     book.title.toLowerCase().includes(filterTerm) ||
     book.author.toLowerCase().includes(filterTerm) ||
