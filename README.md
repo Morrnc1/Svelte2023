@@ -125,6 +125,12 @@ https://www.awwwards.com/sites/fantasy-1
 
 These interactive and navigational elements have been thoughtfully integrated into our website, paying homage to the fantasy inspirations while enhancing the user experience with modern web practices. The result is a seamless blend of inspiration and innovation that makes the Void Library not just a repository of audiobooks, but a journey in itself.
 
+## Project as of the 10th of november 2023
+![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/872acfe1-ab77-4cb9-92e8-91ec51a9d294)
+![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/faa42804-9157-4606-a267-d2493a725ded)
+![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/e30a4141-8edc-4a95-9181-9e2b6a0375e7)
+![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/f4cf66a1-68b4-426e-9a47-3e7fb95ffbcb)
+![image](https://github.com/Morrnc1/Web-One-2023-Morrnc1/assets/132305572/b713e587-98c2-45e5-ae76-a7767ac172c1)
 ## Installation and Setup
 Provide step-by-step instructions on how to get a development environment running.
 
