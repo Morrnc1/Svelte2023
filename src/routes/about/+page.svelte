@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="css/about.css" />
 
 <div class="container">
-  <h1 class="title">The Drifting Library of Magic</h1>
+  <h1 class="title">History Of The Void</h1>
   <button on:click={toggleBubbles} class={showBubbles ? "" : "toggle-off"}
     >{showBubbles ? "Hide Magical Images" : "Discover Magical Images"}</button
   >
